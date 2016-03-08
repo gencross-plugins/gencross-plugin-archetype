@@ -7,11 +7,27 @@
 	<requiredProperties>
 		<requiredProperty key="name"/>
 		<requiredProperty key="package"/>
+		<requiredProperty key="className"/>
 	</requiredProperties>
 
 	<fileSets>
 		<fileSet filtered="true">
 			<directory>src/main/resources</directory>
+			<includes>
+				<include>genCrossPlugin.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>__className__.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet filtered="true" packaged="true">
+			<directory>src/main/java</directory>
+			<includes>
+				<include>__className__.java</include>
+			</includes>
 		</fileSet>
 	</fileSets>
 
