@@ -12,4 +12,11 @@
 		<groupId>com.mrprez</groupId>
 		<version>1.4</version>
 	</parent>
+	
+	<scm>
+		<connection>scm:git:git://github.com/gencross-plugins/gencross-plugin-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:gencross-plugins/gencross-plugin-archetype.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
 </project>
